@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Tyler Malboeuf> -- <Developer & Designer> -- <@tmalboeuf>
 
 # THANKS
 

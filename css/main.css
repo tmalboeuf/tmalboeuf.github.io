@@ -105,9 +105,13 @@ main {
     height: auto;
     margin: 100px auto;
     font-family: questrial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     overflow: auto;
+}
+
+img {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 .nav {
@@ -157,6 +161,11 @@ li a:hover {
     width: auto;
     text-transform: none;
     overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.profileText a {
+    display: inline;
 }
 
 .profileImg {
@@ -165,6 +174,7 @@ li a:hover {
     width: 35%;
     margin-right: 40px;
     margin-bottom: 40px;
+    overflow: auto;
 }
 
 .profileImg img {
@@ -176,7 +186,7 @@ li a:hover {
 .image img {
     display: block;
     margin: 0 auto;
-    width: auto;
+    width: 50%;
 }
 
 .project {
@@ -187,6 +197,7 @@ li a:hover {
 
 .project img {
     width: 100%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 
@@ -201,8 +212,8 @@ li a:hover {
     position: absolute;
     transform: perspective( 600px ) rotateY( 0deg );
     background: blue;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     backface-visibility: hidden;
     transition: transform .3s linear 0s;
 }
@@ -210,9 +221,11 @@ li a:hover {
 .flip3d .cardBack {
     position: absolute;
     transform: perspective( 600px ) rotateY( 180deg );
-    background: red;
-    height: 100px;
-    width: 100px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    height: 200px;
+    width: 200px;
     backface-visibility: hidden;
     transition: transform .3s linear 0s;
 }
@@ -241,6 +254,7 @@ li a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 .landingLogo {
@@ -257,6 +271,32 @@ li a:hover {
     background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
     padding-right: 10px;
     color: #f4f5f5;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.resHead {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contactText {
+    padding: 20px 0;
 }
 
 
@@ -286,6 +326,10 @@ li a:hover {
         width: 100%;
     }
 
+    .profileText {
+        clear: left;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -293,10 +337,6 @@ li a:hover {
     .landingCard {
         width: 80%;
     }
-
-}
-
-@media screen and (max-width: 700px) {
 
     .personalLogo {
         padding-bottom: 5px;
@@ -328,6 +368,7 @@ li a:hover {
     .content {
         float: left;
         clear: left;
+        width: 100%;
     }
 
     .project {
@@ -352,6 +393,16 @@ li a:hover {
 
     .landingSec {
         font-size: 3vw;
+    }
+
+    .activePage a {
+        background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+        padding: 0;
+    }
+
+    .text {
+        padding-right: 0;
+        padding-left: 0;
     }
 
 }
