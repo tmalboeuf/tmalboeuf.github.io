@@ -5,10 +5,6 @@
 
     <Tyler Malboeuf> -- <Developer & Designer> -- <@tmalboeuf>
 
-# THANKS
-
-    <name>
-
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
